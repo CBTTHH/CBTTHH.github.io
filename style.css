@@ -1,16 +1,171 @@
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f5f7fa;
+  max-width: 900;
   margin: auto;
   padding: 40px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #222;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 h1, h2 {
   margin-top: 40px;
+  text-indent: 20px;
+}
+
+section {
+  margin-bottom: 60px;
 }
 
 a {
-  color: #0066cc;
-  text-decoration: none;
+  color: #a625eb;
+  font-weight: 500;
 }
+
+.big_box {
+  margin-top: 40px;
+  background: linear-gradient(180deg, #ffffff, #f6faff);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.small_box {
+  background: #f9fbff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1
+  );
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.small_box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.project-links a {
+  margin-right: 16px;
+  font-weight: 700;
+}
+
+.video-container {
+  margin-top: 16px;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.hero {
+  background: linear-gradient(#5b4acb, #9382fe);
+  color: white;
+  padding: 60px 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: ease-out 0.5s, box-shadow ease-in 0.5s;
+}
+
+.hero:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6 );
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.interests {
+  font-size: 1.9rem;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.floating-contact {
+  position: fixed;
+  right: 50px;
+  top: 60px;
+  width: 150px;
+}
+
+.contact-btn {
+  width: 100%;
+  background: linear-gradient(#7777cf, #a5c1f5);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+.contact-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.contact-menu a {
+  display: block;
+  padding: 12px 0;
+  color: #222;
+  text-align: center;
+  transition: background 0.15s ease, padding-left 0.15s ease;
+}
+
+.contact-menu a:hover {
+  background: #f2f4f8;
+  padding-left: 6px;
+}
+
+.floating-contact:hover .contact-menu {
+  opacity: 0.9;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+

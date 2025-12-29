@@ -2,50 +2,138 @@
 <head>
   <meta charset="UTF-8">
   <title>David Zou | Computer Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 
-<header>
+<header class="hero">
   <h1>David Zou</h1>
-  <p>Computer Science student at the University of Florida</p>
-  <p>Interested in automation, systems, and algorithms</p>
+  <p class="subtitle">Computer Science Student</p>
+  <p class="interest">
+    I am interested in automation, autonomous systems, and algorithms. <br> 
+    My projects focus on building systems that reason and  act in dynamic environments, they are characterized on clear architecture, experimentation, and performance.
+  </p>
 </header>
 
-<section>
+<section class="big_box">
   <h2>Projects</h2>
 
-  <h3>Minecraft Auto-Miner Bot</h3>
+  <div class="small_box"> 
+  <h3>Minecraft Auto-Miner Bot (v2.0)</h3>
   <p>
-    Python-based autonomous mining agent with modular architecture.
-    Focused on automation, safety systems, and decision logic.
+    Designed and implemented a system-oriented architecture for an autonomous Minecraft mining agent.
+    Refactored a monolithic script into modular low-level systems and high-level systems modes.
   </p>
-  <a href="https://github.com/CBTTHH/Minecraft-AutoMiner-BOT">GitHub</a> |
-  <a href="https://www.youtube.com/@CBTTHH">YouTube</a>
+  <p>
+    This version focuses on:
+    <ul>
+      <li>Background player-state tracking to reduce repeated API calls</li>
+      <li>Add centralized physics constants and thresholds to support safe adjustments and controlled testing</li>      
+      <li>Clear separation of functions to allow easier experimentation and extensibility</li>
+      <li>Isolated test scripts to benchmark and debug individual subsystems</li>
+      <li>Adding new features to improve algorithm speed and logic</li>
+    </ul>
+  </p>
+  <a href="https://github.com/CBTTHH/Minecraft-AutoMiner-BOT">GitHub: Minecraft-AutoMiner-BOT</a> 
+  </div>
 
+  <div class="small_box">
+  <h3>Minecraft Auto-Miner Bot (v1.0)</h3>
+  <p>
+    Developed an autonomous mining agent capable of navigating from the surface level to a target depth while handling environmental hazards such as water, caves, and lava. <br>
+    Implemented rule-based decision logic inspired by graph traversal concepts and safety-driven recovery behaviors.
+  </p>
+  <p>
+    This project focused on:
+    <ul>
+      <li>Designing decision rules under uncertainty</li>
+      <li>Design a fast and specialized ore search algorithm for the Minecraft environment</li>
+      <li>Moving from abstract algorithms to real-time behavior</li>
+    </ul>
+  </p>
+  
+  <details class="custom-menu">
+    <summary>
+      <span class="arrow"></span>
+      <a href="https://www.youtube.com/watch?v=IdFy5w9tKBE&t=23s">YouTube Video Explanation</a>
+    </summary>
+    
+  <div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/IdFy5w9tKBE"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  </div>
+
+  </details>
+  </div>
+
+  <div class="small_box">
   <h3>Sudoku Game</h3>
   <p>
-    Fully playable Sudoku game with multiple difficulties, visuals, and music.
+    Built a complete Sudoku system including puzzle generation, constraint validation, and game-state management. <br>
+    Implemented difficulty levels and a graphical interface with visual and audio feedback.
   </p>
-  <a href="https://github.com/CBTTHH/Sudoku---Final-Group-111">GitHub</a>
-</section>
-
-<section>
-  <h2>Skills</h2>
   <p>
-    Python, C++ (fundamentals), HTML/CSS (basic)<br>
-    Data Structures & Algorithms, OOP
+    This project centered on:
+    <ul>
+      <li>Algorithmic correctness and constraint satisfaction</li>
+      <li>State tracking and user testing</li>
+      <li>Translating logic into an interactive system</li>
+    </ul>
   </p>
+  <a href="https://github.com/CBTTHH/Sudoku---Final-Group-111">GitHub: Sudoku Project</a>
+  </div>
 </section>
 
-<section>
+<section class="big_box">
+  <h2>Skills</h2>
+  <div class="small_box">
+  <p>
+    <ul>
+      <li>Languages: Python, C++ (fundamentals), HTML/CSS (basic)</li>
+      <li>Computer Science: Data Structures & Algorithms, OOP, modular system design</li>
+      <li>Tools: Git/GitHub, minescript</li>
+    </ul>
+  </p>
+  </div>
+</section>
+
+<section class="big_box">
   <h2>Resume</h2>
-  <a href="resume.pdf">Download Resume</a>
+  <div class="small_box">
+    <iframe src="resume.pdf" width="100%" height="700px"></iframe>
+    <p>Your browser does not support PDFs. <a href="resume.pdf">Download Resume</a></p>
+  </div>
 </section>
 
-<footer>
-  <p>GitHub: <a href="https://github.com/CBTTHH">CBTTHH</a></p>
+
+<footer class="big_box">
+  <h2>Contact</h2>
+  <div class="small_box">
+  <p>
+    <ul>
+    <li>Gmail: <a href="mailto:davidzouli@gufl.edu">davidzouli@ufl.edu</a></li>
+    <li>GitHub: <a href="https://github.com/CBTTHH" target="_blank">github.com/CBTTHH</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/david-zou-li-55086a37b/" target="_blank">https://www.linkedin.com/in/david-zou-li-55086a37b/</a></li>
+    </ul>
+  </p>
+  </div>
 </footer>
+
+<div class="floating-contact">
+  <button class="contact-btn">Contact</button>
+
+  <div class="contact-menu">
+    <a href="mailto:davidzouli@ufl.edu" target="_blank">Email</a>
+    <a href="https://github.com/CBTTHH" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/david-zou-li-55086a37b/" target="_blank"">LinkedIn</a>
+  </div>
+</div>
 
 </body>
 </html>
